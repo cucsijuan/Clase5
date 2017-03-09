@@ -156,7 +156,7 @@ public class ContactPreviewFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.fragment_ContactPreview, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_contactpreview, container, false);
         return rootView;
     }
 

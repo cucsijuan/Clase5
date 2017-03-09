@@ -1,11 +1,13 @@
 package com.ana_pc.contactlist;
 
+import android.annotation.TargetApi;
 import android.app.Activity;
 
 import android.app.ActionBar;
 import android.app.Fragment;
 import android.app.FragmentManager;
 import android.app.FragmentTransaction;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.LayoutInflater;
 import android.view.View;
@@ -84,11 +86,13 @@ public class MainActivity extends Activity
         }
     }
 
+    @TargetApi(Build.VERSION_CODES.LOLLIPOP)
     public void restoreActionBar() {
         ActionBar actionBar = getActionBar();
         actionBar.setNavigationMode(ActionBar.NAVIGATION_MODE_STANDARD);
         actionBar.setDisplayShowTitleEnabled(true);
         actionBar.setTitle(mTitle);
+
     }
 
     /**

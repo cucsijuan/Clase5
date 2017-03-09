@@ -11,7 +11,7 @@ public class PhoneDialFragment extends Fragment {
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.fragment_PhoneDial, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_phonedial, container, false);
         return rootView;
     }
 }

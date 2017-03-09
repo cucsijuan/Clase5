@@ -50,7 +50,7 @@ public class ContactFormFragment extends Fragment
     @Override
     public View onCreateView(LayoutInflater inflater, ViewGroup container, Bundle savedInstanceState)
     {
-        View rootView = inflater.inflate(R.layout.fragment_ContactForm, container, false);
+        View rootView = inflater.inflate(R.layout.fragment_contactform, container, false);
         return rootView;
     }
 
@@ -76,6 +76,7 @@ public class ContactFormFragment extends Fragment
         editUserImage.setTypeface(font);
 
         TextView editImage = (TextView)getView().findViewById(R.id.edit_image);
+
         editImage.setOnClickListener(new View.OnClickListener()
         {
             @Override
@@ -101,7 +102,7 @@ public class ContactFormFragment extends Fragment
             }
             });
 
-                Intent intent = getActivity().getIntent();
+        Intent intent = getActivity().getIntent();
         final long id = intent.getLongExtra("personID", 0);
         final DBHelper bh = new DBHelper(getActivity());
         final String idString = Long.toString(id);

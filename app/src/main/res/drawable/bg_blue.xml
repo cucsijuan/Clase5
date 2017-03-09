@@ -4,13 +4,13 @@
     android:shape="rectangle"
     >
 
-    <solid  android:color="#9999AA" />
+    <solid  android:color="#000000" />
 
-    <gradient
-        android:startColor="#FFFFFF"
-        android:endColor="#FF7777"
-        android:angle="90"
-        />
+    <!--<gradient-->
+        <!--android:startColor="#FFFFFF"-->
+        <!--android:endColor="#FF7777"-->
+        <!--android:angle="90"-->
+        <!--/>-->
 
     <stroke
         android:color="#000000"
