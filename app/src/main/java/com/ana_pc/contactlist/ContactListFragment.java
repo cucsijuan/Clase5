@@ -123,19 +123,19 @@ public class ContactListFragment extends Fragment {
         public View newView(Context context, Cursor cursor, ViewGroup parent) {
             LayoutInflater li = getActivity().getLayoutInflater();
             View newView = li.inflate(R.layout.row_persona,parent, false);
-
-            String name = cursor.getString(cursor.getColumnIndex(COL_NAME));
-            String lastname = cursor.getString(cursor.getColumnIndex(COL_LASTNAME));
-            //String photo = cursor.getString(cursor.getColumnIndex(COL_PHOTO));
-
-            TextView nameView = (TextView) newView.findViewById(R.id.nombre_de_persona);
-            //ImageView photoView = (ImageView) newView.findViewById(R.id.contact_photo);
-
-            String fullname = (lastname != null && !lastname.equals("")) ? name + " " + lastname : name;
-            nameView.setText(fullname);
-            /*if(photo != null) {
-                photoView.setImageBitmap(BitmapFactory.decodeFile(photo));
-            }*/
+//
+//            String name = cursor.getString(cursor.getColumnIndex(COL_NAME));
+//            String lastname = cursor.getString(cursor.getColumnIndex(COL_LASTNAME));
+//            //String photo = cursor.getString(cursor.getColumnIndex(COL_PHOTO));
+//
+//            TextView nameView = (TextView) newView.findViewById(R.id.nombre_de_persona);
+//            //ImageView photoView = (ImageView) newView.findViewById(R.id.contact_photo);
+//
+//            String fullname = (lastname != null && !lastname.equals("")) ? name + " " + lastname : name;
+//            nameView.setText(fullname);
+//            /*if(photo != null) {
+//                photoView.setImageBitmap(BitmapFactory.decodeFile(photo));
+//            }*/
 
 
             return newView;
